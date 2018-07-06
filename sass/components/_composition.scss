@@ -4,11 +4,12 @@
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-    position: absolute;
     border-radius: 2px;
+    position: absolute;
     z-index: 10;
-    outline-offset: 2rem;
     transition: all 0.2s;
+    outline-offset: 2rem;
+
     &--p1 {
       left: 0;
       top: -2rem;
@@ -31,7 +32,9 @@
       z-index: 20;
     }
   }
+
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
   }
+  //composition:hover composition__photo:not(:hover) {
 }
